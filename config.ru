@@ -7,4 +7,8 @@ require './config/environment'
 #end 
 
 use Rack::MethodOverride 
+use Rack::Session::Cookie 
+use SessionsController
+use MoviesController
+use UsersController
 run ApplicationController
