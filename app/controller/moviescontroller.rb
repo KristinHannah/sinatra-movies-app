@@ -16,12 +16,11 @@ class MoviesController < ApplicationController
         if !logged_in?
             redirect '/login'
         else 
-            movie = Movie.find(params[:id])
-            if movie.user_id == current_user.id 
-                #edit post form 
-            else 
-                redirect '/movies'
-            end 
+           if movie = current_user.movies.find_by(params[:id])
+             #edit post form 
+           else 
+            redirect '/movies'
+           end 
         end 
     end 
 
