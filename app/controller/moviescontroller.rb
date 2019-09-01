@@ -5,7 +5,7 @@ class MoviesController < ApplicationController
     end 
 
     get '/movies/new' do 
-        if !session[:email] 
+        if !logged_in?
             redirect '/login'
         else 
             'A new movie form'
@@ -13,10 +13,15 @@ class MoviesController < ApplicationController
     end 
 
     get '/movies/:id/edit' do 
-        if !session[:email] 
+        if !logged_in?
             redirect '/login'
         else 
-            'A edit movie form'
+            movie = Movie.find(params[:id])
+            if movie.user_id == current_user.id 
+                #edit post form 
+            else 
+                redirect '/movies'
+            end 
         end 
     end 
 
