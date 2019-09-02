@@ -6,11 +6,11 @@
 <p> Release Date: <%= @movie.release_date %> </p>
 <p> genre: <%= @movie.genre %> </p>
 <p> Director: <%= @movie.director %> </p>
-<p> Date Watched: <%= @movie.date_wacthed %> </p>
+<p> Date Watched: <%= @movie.date_watched %> </p>
 <p> Location Watched: <%= @movie.location_watched %> </p>
 <p> Rating: <%= @movie.rating %> </p>
 
-<form action='/movies/<%=@recipe.id%>' method="POST">
+<form action="/movies/<%= @movie.id %>" method="POST">
 <input id="hidden" type="hidden" name="_method" value="patch">
 <p> 
 <label for="title"> Title:  <input type="text" name="title" id="title"> </label>
@@ -24,7 +24,7 @@
 <p>
 <label for="director"> Director: </label> <input type="text" name="director" id="director"> </p>
 <p>
-<label for="date_watched"> Date you watched the movie: </label> <input type="text" name="date_wacthed" id="date_watched"> </p>
+<label for="date_watched"> Date you watched the movie: </label> <input type="text" name="date_watched" id="date_watched"> </p>
 <p>
 <label for="location_watched"> Where you watched the movie: </label> <input type="text" name="location_watched" id="location_watched"> </p>
 <p>

@@ -2,14 +2,17 @@
 <h1> <%= @movie.title %>
 <p> Title: <%= @movie.title %> </p>
 <p> Release Date: <%= @movie.release_date %> </p>
-<p> genre: <%= @movie.genre %> </p>
+<p> Genre: <%= @movie.genre %> </p>
 <p> Director: <%= @movie.director %> </p>
-<p> Date Watched: <%= @movie.date_wacthed %> </p>
+<p> Date Watched: <%= @movie.date_watched %> </p>
 <p> Location Watched: <%= @movie.location_watched %> </p>
 <p> Rating: <%= @movie.rating %> </p>
+
+<p> You can delete the movie from your list by clicking the delete button </p>
 <form method="POST" action="/movies/<%=@movie.id%>">
   <input type="hidden" name="_method" value="DELETE" />
   <input type="submit" value="delete" />
 </form>
-
+<a href="/movies/<%=@movie.id%>/edit"> or edit the post here </a>
+  <a href="/movies"> Homepage </a>
 

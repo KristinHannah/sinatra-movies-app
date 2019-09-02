@@ -15,7 +15,9 @@ class MoviesController < ApplicationController
 
     post '/movies' do 
         @movie = Movie.create(params)
-        redirect to "/movies/#{@recipe.id}"
+        @movie.user_id = current_user.id
+        @movie.save
+        redirect to "/movies/#{@movie.id}"
     end 
 
     get '/movies/:id' do 
@@ -29,7 +31,7 @@ class MoviesController < ApplicationController
         else 
            if movie = current_user.movies.find_by(params[:id])
              @movie = Movie.find_by_id(params[:id])
-             erb :edit
+             erb :'/movies/edit'
            else 
             redirect '/movies'
            end 
@@ -46,7 +48,7 @@ class MoviesController < ApplicationController
         @movie.location_watched = params[:location_watched]
         @movie.rating = params[:rating]
         @movie.save
-        redirect to "/movies/#{@recipe.id}"
+        redirect to "/movies/#{@movie.id}"
     end 
 
     delete '/movies/:id' do 
