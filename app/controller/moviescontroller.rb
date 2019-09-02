@@ -19,6 +19,7 @@ class MoviesController < ApplicationController
     end 
 
     get '/movies/:id' do 
+        @movie = Movie.find_by_id(params[:id])
         erb :'/movies/show'
     end 
 
@@ -27,7 +28,8 @@ class MoviesController < ApplicationController
             redirect '/login'
         else 
            if movie = current_user.movies.find_by(params[:id])
-             #edit post form 
+             @movie = Movie.find_by_id(params[:id])
+             erb :edit
            else 
             redirect '/movies'
            end 
