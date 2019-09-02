@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController 
 
     get '/movies' do 
-        @all_movies = current_user.movies.all 
+        @movies = current_user.movies.all 
         erb :'/movies/index'
     end 
 
@@ -46,7 +46,7 @@ class MoviesController < ApplicationController
         @movie.location_watched = params[:location_watched]
         @movie.rating = params[:rating]
         @movie.save
-        redirect to "/movies/#{@recipe.id}""
+        redirect to "/movies/#{@recipe.id}"
     end 
 
     delete '/movies/:id' do 

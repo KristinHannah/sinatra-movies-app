@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 
     validates :email, :presence => true 
 
-    has_many :posts 
+    has_many :movies
 end 
 
 #may need to drop tables, and re do them. I think maybe I needed to add
