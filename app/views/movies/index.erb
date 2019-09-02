@@ -1,4 +1,8 @@
-<ul>
+<h1> Hello <%= session[:email]%> </h1>
+    <h2> This is your homepage where you will see all of the movies you have tracked</h2>
+
+    <a href="/movies/new"> Input a movie here </a>
+    <ul>
     <% @movies.each do |movie| %>
     <li>
           <a href="/movies/<%= movie.id %>">Title: <%= recipe.title %></a>
