@@ -1,0 +1,15 @@
+<ul>
+    <% @movies.each do |movie| %>
+    <li>
+          <a href="/movies/<%= movie.id %>">Title: <%= recipe.title %></a>
+    <p> Release Date: <%= movie.release_date %> </p>
+    <p> genre: <%= movie.genre %> </p>
+    <p> Director: <%= movie.director %> </p>
+    <p> Date Watched: <%= movie.date_wacthed %> </p>
+    <p> Location Watched: <%= movie.location_watched %> </p>
+    <p> Rating: <%= movie.rating %> </p>
+
+
+    </li>
+    <% end %>
+</ul>

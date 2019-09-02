@@ -1,6 +1,15 @@
 <h1> Edit Movie</h1>
 
 
+<h1> <%= @movie.title %>
+<p> Title: <%= @movie.title %> </p>
+<p> Release Date: <%= @movie.release_date %> </p>
+<p> genre: <%= @movie.genre %> </p>
+<p> Director: <%= @movie.director %> </p>
+<p> Date Watched: <%= @movie.date_wacthed %> </p>
+<p> Location Watched: <%= @movie.location_watched %> </p>
+<p> Rating: <%= @movie.rating %> </p>
+
 <form action='/movies/<%=@recipe.id%>' method="POST">
 <input id="hidden" type="hidden" name="_method" value="patch">
 <p> 
