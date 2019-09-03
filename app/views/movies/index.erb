@@ -8,12 +8,19 @@
     <% @movies.each do |movie| %>
     <li>
      <a href="/movies/<%= movie.id %>">Title: <%= movie.title %></a>
+     <br />
          Release Date: <%= movie.release_date %> 
+            <br />
          genre: <%= movie.genre %> 
+            <br />
          Director: <%= movie.director %> 
+            <br />
          Date Watched: <%= movie.date_watched %> 
+            <br />
          Location Watched: <%= movie.location_watched %> 
+            <br />
         Rating: <%= movie.rating %> 
+           <br />
     </li>
     <% end %>
     </ul>
