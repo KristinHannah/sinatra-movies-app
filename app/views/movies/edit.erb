@@ -13,22 +13,22 @@
 <form action="/movies/<%= @movie.id %>" method="POST">
 <input id="hidden" type="hidden" name="_method" value="patch">
 <p> 
-<label for="title"> Title:  <input type="text" name="title" id="title" placeholder= <%= @movie.title %> > </label>
+<label for="title"> Title:  <input type="text" name="title" id="title" placeholder= " <%= @movie.title %> " > </label>
 </p>
 
 <p>
-<label for="release_date"> Release Date: </label> <input type="text" name="release_date" id="release_date" placeholder= <%= @movie.release_date %> > </p>
+<label for="release_date"> Release Date: </label> <input type="text" name="release_date" id="release_date" placeholder= " <%= @movie.release_date %> "> </p>
 
 <p>
-<label for="genre"> Genre: </label> <input type="text" name="genre" id="genre" placeholder= <%= @movie.genre %> > </p>
+<label for="genre"> Genre: </label> <input type="text" name="genre" id="genre" placeholder= "<%= @movie.genre %>" > </p>
 <p>
-<label for="director"> Director: </label> <input type="text" name="director" id="director"  placeholder= <%= @movie.director %> > </p>
+<label for="director"> Director: </label> <input type="text" name="director" id="director"  placeholder= "<%= @movie.director %>" > </p>
 <p>
-<label for="date_watched"> Date you watched the movie: </label> <input type="text" name="date_watched" id="date_watched"  placeholder= <%= @movie.date_watched %> > </p>
+<label for="date_watched"> Date you watched the movie: </label> <input type="text" name="date_watched" id="date_watched"  placeholder= "<%= @movie.date_watched %>" > </p>
 <p>
-<label for="location_watched"> Where you watched the movie: </label> <input type="text" name="location_watched" id="location_watched"  placeholder= <%= @movie.location_watched %> > </p>
+<label for="location_watched"> Where you watched the movie: </label> <input type="text" name="location_watched" id="location_watched"  placeholder= "<%= @movie.location_watched %>" > </p>
 <p>
-<label for="rating"> Your rating(1-10): </label> <input type="text"  name="rating" id="rating"  placeholder= <%= @movie.rating %> > </p>
+<label for="rating"> Your rating(1-10): </label> <input type="text"  name="rating" id="rating"  placeholder= "<%= @movie.rating %>"" > </p>
 
 <input type="submit" id="submit">
 </form>
