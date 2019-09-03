@@ -1,0 +1,48 @@
+body {
+    color: black;
+    background-color: red;
+    font-family: Helvetica, sans serif;
+    /* this turns the whole page red and makes text black */
+    margin: 10%;
+    padding: 4% 20% 4% 20%;
+    cursor: crosshair;
+  }
+  
+  nav {
+    padding-top: 75%;
+    padding-left: 25%; 
+    border-style: none;
+    text-align: right;
+  }
+  
+  div.container h1 {
+    font-size: 30pt;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+ h3 {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  p {
+    font-size: medium;
+    text-align: left;
+  }
+
+  body.container li {
+    font-size: medium;
+    border-style: inset; 
+    padding: 20px;
+    border: 5px dotted grey;
+    margin-top: 60px;
+  }
+
+  body.container li:hover {
+    background-color: blue;
+  }
+  
+  
