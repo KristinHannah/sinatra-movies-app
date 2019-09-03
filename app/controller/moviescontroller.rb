@@ -52,9 +52,17 @@ class MoviesController < ApplicationController
     end 
 
     delete '/movies/:id' do 
-        @movie = Movie.find_by_id(params[:id])
-        @movie.delete
-        redirect to '/movies'
+        if !logged_in? 
+            redirect '/login'
+        else 
+            if movie = current_user.movies.find_by(params[:id])
+            @movie = Movie.find_by_id(params[:id])
+             @movie.delete
+            redirect to '/movies'
+            else    
+                redirect to '/movies'
+            end
+        end 
     end 
 
 end 
