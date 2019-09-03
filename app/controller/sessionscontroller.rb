@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
 
     get '/logout' do 
         session.clear 
-        redirect '/movies'
+        redirect '/login'
     end 
 
 end 
