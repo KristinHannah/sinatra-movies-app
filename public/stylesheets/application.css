@@ -19,6 +19,7 @@ h1 {
     font-weight: bolder;
     text-align: center;
     color: #553c8b;
+    font-family: 'Lexend Zetta', sans-serif;
   }
 
   div.container h1{
@@ -42,7 +43,7 @@ h1 {
  div.container ul li {
     font-size: medium;
     padding: 20px;
-    border: 5px dotted #fff1c1;
+    border: 5px solid #fff1c1;
     margin-top: 60px;
     list-style-type: none; 
   }
