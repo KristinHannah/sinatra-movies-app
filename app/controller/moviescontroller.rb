@@ -41,12 +41,11 @@ class MoviesController < ApplicationController
     patch '/movies/:id' do 
         @movie = Movie.find_by_id(params[:id])
         @movie.title = params[:title]
-        @movie.release_date = params[:release_date]
-        @movie.genre = params[:genre]
         @movie.director = params[:director]
         @movie.date_watched = params[:date_watched]
         @movie.location_watched = params[:location_watched]
         @movie.rating = params[:rating]
+        @movie.review = params[:review]
         @movie.save
         redirect to "/movies/#{@movie.id}"
     end 

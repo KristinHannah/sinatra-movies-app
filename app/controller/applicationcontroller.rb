@@ -12,7 +12,6 @@ class ApplicationController < Sinatra::Base
         "Hello World!"
     end 
     
-
     helpers do 
 
         def logged_in?
