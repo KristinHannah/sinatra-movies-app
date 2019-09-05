@@ -1,7 +1,7 @@
 body {
-    color: #293462;
-    background-color: #ccc1ff;
-    font-family: Helvetica;
+    color: #ffffff;
+    background-color: #330000;
+    font-family: 'Fira Mono', monospace;
     margin: 4%;
     padding: 4% 4% 4% 4%;
     cursor: crosshair;
@@ -18,8 +18,8 @@ h1 {
     font-size: 30pt;
     font-weight: bolder;
     text-align: center;
-    color: #553c8b;
-    font-family: 'Lexend Zetta', sans-serif;
+    color: #000000;
+    font-family: 'Permanent Marker', cursive;
   }
 
   div.container h1{
@@ -27,12 +27,12 @@ h1 {
       text-align: left;
   }
 
- h3 {
+ h2 {
     font-size: large;
     font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-    color: #553c8b;
+    text-align: left;
+    text-decoration: underline; 
+    color: #ffffff;
   }
   
   p {
@@ -43,13 +43,13 @@ h1 {
  div.container ul li {
     font-size: medium;
     padding: 20px;
-    border: 5px solid #fff1c1;
+    border: 5px solid #000000;
     margin-top: 60px;
     list-style-type: none; 
   }
 
   div.container li:hover {
-    background-color: #293462;
-    color: #fff1c1;
+    background-color: #660000;
+    color: #ffffff;
   }
   

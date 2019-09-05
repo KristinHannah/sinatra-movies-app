@@ -7,11 +7,6 @@ class ApplicationController < Sinatra::Base
         set :session_secret, 'moviescollection'
     end 
 
-    get '/' do 
-        session[:greeting] = "Hello"
-        "Hello World!"
-    end 
-    
     not_found do 
         erb :'/error'
     end 
