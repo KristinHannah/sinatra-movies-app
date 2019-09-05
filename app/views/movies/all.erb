@@ -1,7 +1,7 @@
    <ul>
     <% @movies.each do |movie| %>
     <li>
-     <a href="/movies/<%= movie.id %>">Title: <%= movie.title %></a>
+         Title: <%= movie.title %>
      <br />
          Director: <%= movie.director %> 
             <br />
@@ -16,6 +16,8 @@
            <% @who = movie.user_id %>
            <% @user = User.find_by_id(@who) %>
            Posted by: <%= @user.email %>
+           <br />
+          <button class="button"> <a href="/movies/<%= movie.id %>"> See Post </a> </button>
     </li>
     <% end %>
     </ul>

@@ -16,6 +16,7 @@ gem 'require_all'
 gem 'shotgun'
 gem 'bcrypt'
 gem 'capybara'
+gem 'rack'
 
 
 group :development do

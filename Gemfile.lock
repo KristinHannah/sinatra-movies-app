@@ -101,6 +101,7 @@ DEPENDENCIES
   bcrypt
   capybara
   pry
+  rack
   rake
   require_all
   rspec
