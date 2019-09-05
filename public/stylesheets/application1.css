@@ -3,15 +3,31 @@ body {
     background-color: #330000;
     font-family: 'Fira Mono', monospace;
     margin: 4%;
-    padding: 4% 4% 4% 4%;
+    padding: 0 4% 4% 4%; 
     cursor: crosshair;
   }
   
   nav {
-    padding-top: 2%;
-    padding-left: 2%; 
     border-style: none;
     text-align: right;
+    background-color: #867979;
+  }
+
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  nav li{
+    float: right;
+  }
+
+  nav li a{
+    display: block;
+    padding: 8px;
+    background-color: #867979;
   }
   
 h1 {
@@ -33,6 +49,7 @@ h1 {
     text-align: left;
     text-decoration: underline; 
     color: #ffffff;
+    padding-left: 20px;
   }
   
   p {
@@ -40,12 +57,16 @@ h1 {
     text-align: left;
   }
 
+  div.container {
+    padding: 20px;
+  }
+
  div.container ul li {
     font-size: medium;
-    padding: 20px;
     border: 5px solid #000000;
     margin-top: 60px;
     list-style-type: none; 
+    padding: 20px;
   }
 
   div.container li:hover {
