@@ -6,8 +6,12 @@ class MoviesController < ApplicationController
     end 
 
     get '/movies' do 
+        if !logged_in?
+            redirect '/login'
+        else 
         @movies = current_user.movies.all 
         erb :'/movies/index'
+        end 
     end 
 
     get '/movies/new' do 
