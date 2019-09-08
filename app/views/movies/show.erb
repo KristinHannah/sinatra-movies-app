@@ -1,5 +1,5 @@
 
-<h1> <%= @movie.title %>
+<h1> <%= @movie.title %> </h1>
 <p> Title: <%= @movie.title %> </p>
 <p> Director: <%= @movie.director %> </p>
 <p> Date Watched: <%= @movie.date_watched %> </p>
@@ -7,12 +7,11 @@
 <p> Rating: <%= @movie.rating %> </p>
 <p> Review: <%= @movie.review %> </p>
 
-<p> You can delete the movie from your list by clicking the delete button </p>
 <form method="POST" action="/movies/<%=@movie.id%>">
   <input type="hidden" name="_method" value="DELETE" />
   <input type="submit" value="delete" />
 </form>
-   <button class="button"> <a href="/movies/<%=@movie.id%>/edit"> Edit </a></button>
+   <button class="button"> <a href="/movies/<%=@movie.id%>/edit"> edit </a></button>
 
 
 
