@@ -25,8 +25,11 @@ class MoviesController < ApplicationController
     post '/movies' do 
         @movie = Movie.create(params)
         @movie.user_id = current_user.id
-        @movie.save
-        redirect to "/movies/#{@movie.id}"
+        if @movie.save
+            redirect to "/movies/#{@movie.id}"
+        else   
+            erb :'/movies/new'
+        end 
     end 
 
     get '/movies/:id' do 
