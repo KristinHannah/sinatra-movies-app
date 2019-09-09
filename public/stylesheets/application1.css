@@ -2,7 +2,8 @@ body {
     color: #ffffff;
     background-color: #330000;
     font-family: 'Fira Mono', monospace;
-    cursor: crosshair;
+   /* cursor: crosshair; */
+   cursor: url('/images/raven_png.png'), auto;
   }
   
   nav ul{
@@ -126,3 +127,4 @@ h1 {
     background-color: #330000;
     color: #ffffff;
   }
+
