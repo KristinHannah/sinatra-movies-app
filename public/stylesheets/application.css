@@ -174,10 +174,10 @@ h1 {
   }
 
   a#enter_site{
-    margin-left: auto;
-    margin-right:auto;
+    margin-left: 47%;
+    margin-right: auto;
   }
-  
+
 img#moon{
   display: block;
   position: relative;
