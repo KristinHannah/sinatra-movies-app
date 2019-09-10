@@ -155,7 +155,8 @@ h1 {
 
   div.header_image img#logo{
     position: absolute; 
-    left: 275px;
+    /* left: 275px; */
+    left: 25%;
     top: 15px; 
     max-width: 50%;
     z-index: 4;
