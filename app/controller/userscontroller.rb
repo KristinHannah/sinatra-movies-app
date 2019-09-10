@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
     get '/signup' do 
-        erb :'/users/new'
+        erb :'/users/new', :layout => :layout1
     end 
 
     post '/users' do 
@@ -11,7 +11,7 @@ class UsersController < ApplicationController
         if @user.save
             redirect '/login'
         else 
-            erb :'/users/new'
+            erb :'/users/new', :layout => :layout1
         end 
     end 
 
