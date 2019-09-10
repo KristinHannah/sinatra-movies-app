@@ -1,6 +1,7 @@
 body {
     color: #ffffff;
-    background-color: #330000;
+   /* background-color: #330000; */
+   background-color: #231f20;
     font-family: 'Fira Mono', monospace;
    /* cursor: crosshair; */
    cursor: url('/images/raven_png.png'), auto;
@@ -66,6 +67,8 @@ h1 {
     padding: 20px;
     font-family: 'Fira Mono', monospace;
     color: #ffffff;
+    position: absolute;
+    margin-top: 30%;
   }
 
  div.container ul li {
@@ -123,32 +126,47 @@ h1 {
     outline: none;
   }
 
-  input[type="submit"]:a {
+  input[type="submit"]:hover {
     background-color: #330000;
     color: #ffffff;
   }
 
-  #red_gradient{
-    position: relative;
+  div.header_image{
+    position: absolute;
     top: 0;
-   left: 0;
-   height: 100px;
-    width: 300px;
-    z-index: 3;
+    left: 0;
   }
 
-  #city_scape{
+  div.header_image img#red_gradient{
+    float: left;
     position: relative;
     top: 0;
     left: 0;
-    height: 100px;
-    width: 300px;
+    max-height: 5%;
+    max-width: 100%;
     z-index: 2;
   }
 
-  #logo{
-    height: 15%;
-    width: 10%;
-    z-index: 1;
+  div.header_image img#city_scape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  div.header_image img#logo{
+    position: absolute; 
+    left: 275px;
+    top: 15px; 
+    max-width: 50%;
+    z-index: 4;
   }
  
+  img#ghost{
+    height: 30%;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 275px;
+    margin-right: auto;
+  }
