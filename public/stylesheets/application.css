@@ -1,9 +1,7 @@
 body {
     color: #ffffff;
-   /* background-color: #330000; */
    background-color: #231f20;
     font-family: 'Fira Mono', monospace;
-   /* cursor: crosshair; */
    cursor: url('/images/raven_png.png'), auto;
   }
   
