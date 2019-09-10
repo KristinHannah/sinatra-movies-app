@@ -8,9 +8,12 @@ class ApplicationController < Sinatra::Base
     end 
 
     not_found do 
-        erb :'/error'
+        erb :'/error', :layout => :layout1
     end 
 
+    get '/index' do 
+        erb :'/entry'
+    end
 
     helpers do 
 
