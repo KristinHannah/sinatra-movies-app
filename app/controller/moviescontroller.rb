@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController 
 
-    get '/' do 
+    get '/movies/all' do 
         @movies = Movie.all 
         erb :'/movies/all', :layout => :layout1
     end 
