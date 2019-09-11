@@ -5,38 +5,12 @@ body {
    cursor: url('/images/raven_png.png'), auto;
   }
   
-  nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    padding-left: 5%;
-   background-image: linear-gradient(50deg, #330000,  #867979);
-  }
-
-  nav li{
-    float: right;
-  }
-
-  nav li a{
-    display: block;
-    padding: 8px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  nav li a:hover {
-    background-color: #111;
-  }
-  
   
 h1 {
     font-size: 30pt;
     font-weight: bolder;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Permanent Marker', cursive;
   }
 
@@ -45,6 +19,7 @@ h1 {
       text-align: left;
       margin: 4%;
       padding: 0 4% 4% 4%; 
+      color: #ffffff;
   }
 
  h2 {
@@ -298,8 +273,22 @@ img#moon{
   display: block;
   padding: 10px 0;
   font-size: 22px;
+  float: left;
 }
 
 #menuToggle input:checked ~ ul{
   transform: none;
+}
+
+#menu li a{
+  display: block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menu li a:hover {
+ background-color: #111; 
 }
