@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
         erb :'/error', :layout => :layout1
     end 
 
-    get '/index' do 
+    get '/entry' do 
         erb :'/entry'
     end
 

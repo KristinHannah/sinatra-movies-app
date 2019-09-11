@@ -63,10 +63,13 @@ h1 {
 
   div.container {
     padding: 20px;
+    padding-bottom: 50px;
     font-family: 'Fira Mono', monospace;
     color: #ffffff;
     position: absolute;
     margin-top: 43%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
  div.container ul li {

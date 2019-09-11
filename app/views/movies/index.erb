@@ -2,8 +2,10 @@
     <h2> This is your homepage where you will see all of the horror movies you have tracked.</h2>
 
       <button class="button"> <a href="/movies/new"> Input a movie here </a> </button>
+   <br />
+   <h1> Your Movies </h1>
 
-
+<% if !@movies.empty?%>
     <ul>
     <% @movies.each do |movie| %>
     <li>
@@ -23,3 +25,9 @@
     </li>
     <% end %>
     </ul>
+   
+   <% else %>
+
+   <h2> You don't have any movies yet. Once you do, they'll go here. Input a movie now to fill this up. </h2>
+
+   <% end %>
