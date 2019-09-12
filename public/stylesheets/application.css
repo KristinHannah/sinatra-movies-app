@@ -153,8 +153,9 @@ h1 {
   }
 
   a#enter_site{
-    margin-left: 47%;
+    margin-left: 46%;
     margin-right: auto;
+    text-decoration: underline;
   }
 
 img#moon{
