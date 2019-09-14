@@ -1,6 +1,4 @@
 
-<a id="new_movie" href="/movies/new"> <p id="plus"> + </p> Add New Movie </a>
-
 <h2> Hello <%= session[:email] %> </h2>
     <h2> This is your homepage where you will see all of the horror movies you have tracked.</h2>
 
@@ -9,6 +7,9 @@
 
    <br />
    <h1> Your Movies </h1>
+   <a id="new_movie" href="/movies/new"> <img src="/images/Horror_KK_uploadbutton.png" id="upload" alt="upload button"> </a>
+   <br />
+   <br />
 
 <% if !@movies.empty?%>
     <ul>

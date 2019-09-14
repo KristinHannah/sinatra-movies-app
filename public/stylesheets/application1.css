@@ -154,6 +154,13 @@ h1 {
     z-index: 4;
   }
  
+  /* Upload button */
+  img#upload{
+    float: right;
+    width: 22%;
+    height: 15%;
+  }
+
   /* 404 ghost */
 
   img#ghost{
