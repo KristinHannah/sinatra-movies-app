@@ -83,7 +83,7 @@ h1 {
 
   .button{
     border-radius: 15px;
-    background-color: #f06060; /* #660000 */
+    background-color: #f06060; 
     border: none;
     color: white;
     padding: 17px 17px;
@@ -98,7 +98,7 @@ h1 {
   }
 
   .button:hover {
-    background-color: #8a2d2d;  /* #330000*/
+    background-color: #8a2d2d;  
     color: #ffffff;
   }
 
@@ -155,7 +155,6 @@ h1 {
 
   div.header_image img#logo{
     position: absolute; 
-    /* left: 275px; */
     left: 25%;
     top: 15px; 
     max-width: 50%;
@@ -207,7 +206,6 @@ img#moon{
   #menuToggle
 {
   display: block;
-  /*position: absolute; */
   position: fixed;
   top: 67px;
   left: 67px;
@@ -270,7 +268,6 @@ img#moon{
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
- /* background: #232323; */
  background-color: #ffffff;
 }
 
