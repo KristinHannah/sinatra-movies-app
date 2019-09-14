@@ -28,4 +28,4 @@ https://github.com/KristinHannah/sinatra-movies-app
 
 #License
 
-Bodogemu is licensed under the MIT license, which can be read in the License.md file located at in the root directory.
+The Movie Tracker is licensed under the MIT license, which can be read in the License file located at in the root directory.
