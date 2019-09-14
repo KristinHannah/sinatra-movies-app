@@ -14,6 +14,14 @@ h1 {
     font-family: 'Permanent Marker', cursive;
   }
 
+  a#new_movie{
+    float: right;
+  }
+
+  p#plus{
+    color: red;
+  }
+
  h2 {
     font-size: large;
     font-weight: bold;
