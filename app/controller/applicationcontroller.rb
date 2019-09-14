@@ -3,11 +3,16 @@ class ApplicationController < Sinatra::Base
     configure do 
         set :public_folder, 'public'
         set :views, 'app/views'
+        set :show_exceptions, :after_handler
         enable :sessions 
         set :session_secret, 'moviescollection'
     end 
 
     not_found do 
+        erb :'/error', :layout => :layout1
+    end 
+
+    error 400..501 do 
         erb :'/error', :layout => :layout1
     end 
 
