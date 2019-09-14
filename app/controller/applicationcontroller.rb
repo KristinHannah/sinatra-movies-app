@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
     end
 
     get '/LICENSE' do 
-        erb :'/license'
+        erb :'/license', :layout => :layout1
     end 
 
     helpers do 
