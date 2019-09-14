@@ -3,14 +3,17 @@ Sinatra Project- Movie Tracker
 
 #Description
 
-Horror Movie Tracker is a sinatra web application created so that you can keep track of the horror movies you and your friend's have seen and what you thought of them. In the web app you can:
+Horror Movie Tracker is a sinatra web application created so that you can keep track of the horror movies you and your friend's have seen and what you thought of them. 
+In the web app you can:
 
-Sign up a new account
-Add a horror movie you've seen with some information about it
-See all the horror movies that you and your friends have seen
+1. Sign up a new account 
+2. Login to your account
+3. Add a horror movie you've seen with some information about it
+4. See all the horror movies that you and your friends have seen
+5. Edit and delete your movie posts
 
 #Install Instructions
-Clonec this repo, run 'bundle install', 'rake db:migrate', and then run 'shotgun' to bring up the application at http://127.0.0.1:9393/.
+Clone this repo, run 'bundle install', 'rake db:migrate', and then run 'shotgun' to bring up the application at http://127.0.0.1:9393/.
 
 #Contributing
 
