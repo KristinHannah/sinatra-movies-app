@@ -1,17 +1,23 @@
 body {
     color: #ffffff;
    background-color: #231f20;
-    font-family: 'Fira Mono', monospace;
+    font-family: 'Fira Mono', monospace; 
    cursor: url('/images/raven_png.png'), auto;
   }
   
+
+  @font-face {
+    font-family: Ramsus;
+    src: url(/images/Rasmus-Bold.otf);
+  }
   
 h1 {
-    font-size: 30pt;
+    font-size: 40pt;
     font-weight: bolder;
     text-align: center;
     color: #ffffff;
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: Rasmus;
   }
 
   a#new_movie{
@@ -37,7 +43,7 @@ h1 {
   }
 
   a{
-    font-family: 'Fira Mono', monospace;
+    font-family: Rasmus;
     text-decoration: none;
     color: white;
   }
@@ -54,11 +60,13 @@ h1 {
   }
 
   div.container h1{
-    font-size: 25pt;
+    font-size: 40pt;
     text-align: center;
     margin: 4%;
     padding: 0 4% 4% 4%; 
     color: #ffffff;
+     /* font-family: 'Permanent Marker', cursive; */
+     font-family: Rasmus;
 }
 
  div.container ul li {
@@ -98,7 +106,7 @@ h1 {
   input[type=submit] {
     border-radius: 15px;
     background-color: #f06060; 
-    font-family: 'Fira Mono', monospace;
+    font-family: Rasmus;
     border: none;
     color: white;
     padding: 17px 17px;
