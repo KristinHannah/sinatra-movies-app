@@ -1,6 +1,6 @@
 <h1> Sign Up </h1>
 
-<%= "Must include both email and password" if @user && @user.errors.any? %>
+<%= "Must include both email and password, and cannot already have account with the same email" if @user && @user.errors.any? %>
 <form action='/users' method="POST">
 
 <p> 
