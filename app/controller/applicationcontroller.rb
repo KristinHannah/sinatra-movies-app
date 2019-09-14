@@ -20,6 +20,10 @@ class ApplicationController < Sinatra::Base
         erb :'/entry'
     end
 
+    get '/LICENSE' do 
+        erb :'/license'
+    end 
+
     helpers do 
 
         def logged_in?
