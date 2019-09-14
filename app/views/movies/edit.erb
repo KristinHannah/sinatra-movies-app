@@ -15,7 +15,8 @@
 <p>
 <label for="rating"> Your rating(1-10): </label> <input type="text"  name="rating" id="rating"  placeholder= "<%= @movie.rating %>" value="<%= @movie.rating %>" > </p>
 <p>
-<label for="review"> Review: </label> <textarea rows="7" cols="65" type="text"  name="review" id="review"  placeholder="<%=@movie.review%>" value="<%= @movie.review %>"> </textarea></p>
+<label for="review"> Review: </label> 
+<textarea rows="7" cols="65" type="text" name="review" id="review"  placeholder="<%= @movie.review %>"><%= @movie.review %></textarea></p>
 
 <input type="submit" id="submit">
 </form>
