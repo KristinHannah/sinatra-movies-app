@@ -33,7 +33,7 @@ class MoviesController < ApplicationController
     end 
 
     get '/movies/:id' do 
-        @movie = Movie.find_by_id(params[:id])
+        @movie = current_user.movies.find(params[:id])
         erb :'/movies/show', :layout => :layout1
     end 
 
@@ -41,8 +41,8 @@ class MoviesController < ApplicationController
         if !logged_in?
             redirect '/login'
         else 
-           if current_user.movies.find_by_id(params[:id])
-             @movie = Movie.find_by_id(params[:id])
+           if current_user.movies.find(params[:id])
+             @movie = current_user.movies.find(params[:id])
              erb :'/movies/edit', :layout => :layout1
            else 
             redirect '/movies'
@@ -51,7 +51,7 @@ class MoviesController < ApplicationController
     end 
 
     patch '/movies/:id' do 
-        @movie = Movie.find_by_id(params[:id])
+        @movie = current_user.movies.find(params[:id])
         @movie.title = params[:title]
         @movie.director = params[:director]
         @movie.date_watched = params[:date_watched]
@@ -66,10 +66,10 @@ class MoviesController < ApplicationController
         if !logged_in? 
             redirect '/login'
         else 
-            if current_user.movies.find_by(params[:id])
-            @movie = Movie.find_by_id(params[:id])
-             @movie.delete
-            redirect to '/movies'
+            if current_user.movies.find(params[:id])
+                @movie = current_user.movies.find(params[:id])
+                @movie.delete
+                redirect to '/movies'
             else    
                 redirect to '/movies'
             end
